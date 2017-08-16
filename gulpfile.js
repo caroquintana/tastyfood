@@ -6,7 +6,7 @@ var minifyCSS = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
 
 gulp.task('script', function(){
-	gulp.src(['node_modules/jquery/dist/jquery.js','node_modules/typed.js/lib/typed.js' , 'node_modules/materialize-css/dist/js/materialize.js', 'assets/js/*.js'])
+	gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/materialize-css/dist/js/materialize.js', 'assets/js/*.js'])
 		.pipe(concat('script.js'))
 		.pipe(gulp.dest('dist/js/'));
 });
@@ -20,7 +20,7 @@ gulp.task('style', function(){
 });
 
 gulp.task('webserver', function(){
-	gulp.src('../tastyfoood/')
+	gulp.src('../tastyfood/')
 		.pipe(webserver({
 			port:8080,
 			fallback: 'index.html',
@@ -30,4 +30,12 @@ gulp.task('webserver', function(){
 	}));
 });
 
-gulp.task('default', ['script', 'style', 'webserver']);
+gulp.task('watch', function() {
+	gulp.watch('assets/css/*.css', ['style']);
+});
+
+gulp.task('watchjs', function() {
+	gulp.watch('assets/js/*.js', ['script']);
+});
+
+gulp.task('default', ['script', 'style', 'webserver', 'watch', 'watchjs'])
