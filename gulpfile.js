@@ -30,4 +30,12 @@ gulp.task('webserver', function(){
 	}));
 });
 
-gulp.task('default', ['script', 'style', 'webserver']);
+gulp.task('watch', function() {
+    gulp.watch('assets/css/*.css', ['style']);
+});
+
+gulp.task('watchjs', function() {
+    gulp.watch('assets/js/*.js', ['script']);
+});
+
+gulp.task('default', ['script', 'style', 'webserver', 'watch', 'watchjs'])

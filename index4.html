@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es_CL">
+<head>
+	<meta charset="UTF-8">
+	<title>Tasty Food</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://use.fontawesome.com/5cf616ccce.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="input-field col s12">
+    			<select>
+      				<option value="" disabled selected>Select your city</option>
+      				<option value="1">Santiago</option>
+      				<option value="2">Rio De Janeiro</option>
+      				<option value="3">Sao Paolo</option>
+      				<option value="3">Roma</option>
+      				<option value="3">New York</option>
+    			</select>
+  			</div>
+  		</div>
+  	</div>
+  	<div id='map' class="container-fluid">
+  		<!--Aquí va el mapa-->
+  	</div>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEoWgUBG-M25dnTVZnOmLjB7Rklu_vEmU&libraries=places&callback=initialize"
+	async defer></script>
+	<script src="dist/js/script.js"></script>
+</body>
+</html>
