@@ -20,7 +20,7 @@ gulp.task('style', function(){
 });
 
 gulp.task('webserver', function(){
-	gulp.src('../tastyfoood/')
+	gulp.src('../tastyfood/')
 		.pipe(webserver({
 			port:8080,
 			fallback: 'index.html',
