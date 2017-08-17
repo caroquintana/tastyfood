@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(document).ready(function() {	
+
 	$.ajax({
 		url: 'https://developers.zomato.com/api/v2.1/search',
   		beforeSend: function( req ) {
@@ -40,9 +41,6 @@ $(document).ready(function() {
 				
 
 				$('.inforestorant').append('<div class="infocabecera"><ul class="listfavorito"><li class="favcabecera"><h5 class="infotitulo">'+ titulo +'</h5></li><li class="favcabecera"><i class="fa fa-heart" aria-hidden="true"></i></li></ul></div><p class="titinfo"> Address</p><p class="infomenor">'+ direfavoritos +'</p><p class="titinfo">Price</p><p class="infomenor">'+ "$ "+ preciofavoritos+'</p><p class="titinfo">Rating</p><p class="infomenor">'+ ratingfavoritos+'</p>');
-					////
-
-
 
 			});
 
