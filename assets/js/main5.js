@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
 
 	var localNombre = localStorage.getItem('guadarName'); 
 	$('#nombre').html(localNombre); 
@@ -33,4 +33,4 @@ $(document).ready(function () {
 
      var localFoto = localStorage.getItem('foto');
                     $("#imagen").html(localFoto);
-});
+});*/

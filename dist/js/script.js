@@ -20253,12 +20253,11 @@ if (jQuery) {
   };
 })(jQuery);
 
-/*$(document).ready(function() {
+$(document).ready(function() {
 	$('.cuenta').on('click', function () {
 		$('.botonsign').append('<a href="index2.html" id="sign" class="waves-effect waves-light btn">SIGN UP</a>');
 	})
 });
-*/
 $(document).ready(function() {
   //Menu Desplegable.
      $(".button-collapse").sideNav({
@@ -20325,12 +20324,9 @@ function validarPass(){
 };
 
 $(document).ready(function() {	
-<<<<<<< HEAD
 	$('.cuenta').on('click', function () {
 		$('.botonsign').append('<a href="index2.html" id="sign" class="waves-effect waves-light btn">SIGN UP</a>');
 	});
-
-=======
 	$.ajax({
 		url: 'https://developers.zomato.com/api/v2.1/search',
   		beforeSend: function( req ) {
@@ -20385,7 +20381,6 @@ $(document).ready(function() {
 	.always(function() {
 		console.log("complete");
 	});
->>>>>>> 2ae38c9bf4402a26223624ba0b180f2c76fa921c
 	$('select').change(function() {
 		var valorselect = $(this).val();
 		//console.log(valorselect);	
@@ -20456,8 +20451,6 @@ $(document).ready(function() {
 
 
 	});
-
-	
 });
 var map;
 function initialize() {
@@ -20492,11 +20485,8 @@ function initialize() {
 
 $(document).ready(function() {
 	$('select').material_select();
-<<<<<<< HEAD
 });
-=======
-});
-$(document).ready(function () {
+/*$(document).ready(function () {
 
 	var localNombre = localStorage.getItem('guadarName'); 
 	$('#nombre').html(localNombre); 
@@ -20531,5 +20521,4 @@ $(document).ready(function () {
 
      var localFoto = localStorage.getItem('foto');
                     $("#imagen").html(localFoto);
-});
->>>>>>> 2ae38c9bf4402a26223624ba0b180f2c76fa921c
+});*/
