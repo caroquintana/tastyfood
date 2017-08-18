@@ -7,7 +7,7 @@ $(document).ready(function() {
 		$.ajax({
 			url: 'https://developers.zomato.com/api/v2.1/search',
 	  		beforeSend: function( req ) {
-			req.setRequestHeader('user-key','f2e70ff79611b0cf40d1279af90a8dee');
+			req.setRequestHeader('user-key','4085ae0eef54e40f4717990b90e4bfa6');
 			},
 			type: 'GET',
 			dataType: 'json',
@@ -18,7 +18,6 @@ $(document).ready(function() {
 		})
 		.done(function(data) {
 			console.log("success");
-
 			data.restaurants.forEach(function(el){
 				var namerestaurant = el.restaurant.name;
 				var comuna = el.restaurant.location.locality;
@@ -53,7 +52,7 @@ $(document).ready(function() {
 					var cocina = $(this).find(".ocultococina").text();
 					var ratingfavoritos = $(this).find(".ocultorating").text();
 					var preciofavoritos = $(this).find(".ocultoprecio").text();
-					$('.tablacomparativa').append('<table border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th scope="col" class="comvacio"></th><th scope="col" class="comrest opuno">'+titulo +'</th><th scope="col" class="comrest opdos">Montreal</th></tr></thead><tfoot><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Rate</th><td>'+ratingfavoritos+'</td><td>4.5</td></tr></tfoot><tbody><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Cuisine</th><td>'+cocina+'</td><td>Italian</td></tr></tbody><tfoot><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Cost for two</th><td>$'+preciofavoritos+'</td><td>$45</td></tr></tfoot></table>');
+					$('.tablacomparativa').append('<table border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th scope="col" class="comvacio"></th><th scope="col" class="comrest opuno">'+titulo +'</th><th scope="col" class="comrest opdos">2nd Restorant</th></tr></thead><tfoot><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Rate</th><td>'+ratingfavoritos+'</td><td>Coming soon</td></tr></tfoot><tbody><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Coming soon</th><td>'+cocina+'</td><td>Coming soon</td></tr></tbody><tfoot><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Cost for two</th><td>$'+preciofavoritos+'</td><td>Coming soon</td></tr></tfoot></table>');
 
 				});
 
