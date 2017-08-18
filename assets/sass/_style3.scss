@@ -8,6 +8,7 @@ body{
     background-color: #FF8529;
     display: inline-block;
     margin-bottom: 20px;
+    height: 240px;
     height: 267px;
     position: relative;
 }
@@ -88,7 +89,6 @@ i.fa.fa-heart {
 }
 
 /* comparacion */
-
 .fa-cutlery:hover, .fa-heart:hover{
   color: red;
 }
