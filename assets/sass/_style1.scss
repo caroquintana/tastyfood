@@ -1,0 +1,38 @@
+.fondo{
+	background-image: url('../img/fondo.jpg');
+	height:100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.row-titulo{
+	background-color: $color-row;
+} 
+
+h3{
+	text-align: center;
+	color: $color-titulo;
+}
+.center-btn { 
+	text-align: center;
+}
+.waves-effect{
+	background-color:$color-row;
+	width: 87%;
+	height: 50px;
+	padding: 10px;
+	top: 302px;
+	border-radius: 9px;
+}
+
+
+.btn-large:hover, .btn:hover{
+	background-color: $color-hover;
+} 
+.cuenta {
+	color: $color-titulo;
+	font-size: 17px;
+	margin-top: 293px;
+    margin-left: 101px;
+}
