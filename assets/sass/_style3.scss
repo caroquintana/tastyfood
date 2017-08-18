@@ -9,6 +9,7 @@ body{
     display: inline-block;
     margin-bottom: 20px;
     height: 240px;
+    height: 267px;
     position: relative;
 }
 .contrestorant:hover {
@@ -88,7 +89,9 @@ i.fa.fa-heart {
 }
 
 /* comparacion */
-
+.fa-cutlery:hover, .fa-heart:hover{
+  color: red;
+}
 th, td{
 	background-color: #fff;
 	text-align: center;
@@ -108,4 +111,11 @@ i.fa.fa-circle {
     font-size: 7px;
     margin-right: 13px;
     color: #FF8529;
+}
+
+p.titulocabecera{
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 78px;
+    font-size: 25px;
 }
