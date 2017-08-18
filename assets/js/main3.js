@@ -1,4 +1,8 @@
 $(document).ready(function() {	
+	$('.cuenta').on('click', function () {
+		$('.botonsign').append('<a href="index2.html" id="sign" class="waves-effect waves-light btn">SIGN UP</a>');
+	});
+
 	$('select').change(function() {
 		var valorselect = $(this).val();
 		//console.log(valorselect);	
@@ -52,7 +56,7 @@ $(document).ready(function() {
 					var cocina = $(this).find(".ocultococina").text();
 					var ratingfavoritos = $(this).find(".ocultorating").text();
 					var preciofavoritos = $(this).find(".ocultoprecio").text();
-					$('.tablacomparativa').append('<table border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th scope="col" class="comvacio"></th><th scope="col" class="comrest opuno">'+titulo +'</th><th scope="col" class="comrest opdos">2nd Restorant</th></tr></thead><tfoot><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Rate</th><td>'+ratingfavoritos+'</td><td>Coming soon</td></tr></tfoot><tbody><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Coming soon</th><td>'+cocina+'</td><td>Coming soon</td></tr></tbody><tfoot><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Cost for two</th><td>$'+preciofavoritos+'</td><td>Coming soon</td></tr></tfoot></table>');
+					$('.tablacomparativa').append('<table border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th scope="col" class="comvacio"></th><th scope="col" class="comrest opuno">'+titulo +'</th><th scope="col" class="comrest opdos">2nd Restorant</th></tr></thead><tfoot><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Rate</th><td>'+ratingfavoritos+'</td><td>Coming soon</td></tr></tfoot><tbody><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Cuisines</th><td>'+cocina+'</td><td>Coming soon</td></tr></tbody><tfoot><tr><th scope="row" class="tablenivel"><i class="fa fa-circle" aria-hidden="true"></i>Cost for two</th><td>$'+preciofavoritos+'</td><td>Coming soon</td></tr></tfoot></table>');
 
 				});
 
