@@ -18,7 +18,7 @@ $(document).ready(function () {
                     var fileContent = file.target.result;
 
                      //crear img y guardar en localStorage
-                    var img = '<img width="50%" src="' + fileContent + '">';
+                    var img = '<img width="80%" src="" class="imagen-cargada"' + fileContent + '">';
                     localStorage.setItem('foto', img);
 
            

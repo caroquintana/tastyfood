@@ -8,16 +8,62 @@
 	<script src="https://use.fontawesome.com/5cf616ccce.js"></script>
 	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
 </head>
-<body>
-	<div class="contenedor">
-		<div class="container-fluid">
-			<div class="row">
-				<div id='map' class="col s4"></div>
-			</div>
-		</div>
-	</div>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaQgiQp5xzW3dNJqF81ZU8L4PZGwPXE8Q&libraries=places&callback=initMap"
-	async defer></script>
+<body class="index2">
+	<nav class="">
+        <div class="nav-wrapper">
+            <a href="index.html"><i class="material-icons left">arrow_back</i></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+            <ul class="side-nav" id="mobile-demo">
+                <li class="barra"></li>
+                <li><a href="#"><i class="material-icons">home</i>Home</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#"><i class="material-icons">assignment</i>Sign Up</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#"><i class="material-icons">restaurant</i>Search</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#"><i class="material-icons">place</i>Discover</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#"><i class="material-icons">person</i>Profile</a></li>
+                <li><div class="divider"></div></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="sign-up">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col s12">
+    				<h4 class="center">SIGN UP</h4>
+    				<p class="center">Nice to meet you</p>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="input-field col s12">
+    				<input type="text" id="name">
+    				<label for="name">Your Name</label>
+    				<span id="noName"></span>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="input-field col s12">
+    				<input type="email" id="email">
+    				<label for="email">Your Email</label>
+    				<span id="noEmail"></span>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="input-field col s12">
+    				<input type="password" id="password">
+    				<label for="password">Password</label>
+    				<span id="noPassword"></span>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col s12">
+    				<a href="#" id="btn-signUp" class="btn">CREATE ACCOUNT</a>
+    			</div>
+    		</div>
+    	</div>
+    </section>
 	<script src="dist/js/script.js"></script>
 </body>
 </html>
