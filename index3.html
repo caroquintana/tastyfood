@@ -9,18 +9,38 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
 </head>
 <body>
+	<nav class="">
+        <div class="nav-wrapper">
+            <a href="index2.html"><i class="material-icons left">arrow_back</i></a>
+            <p class="titulocabecera">SEARCH</p>
+            <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+            <ul class="side-nav" id="mobile-demo">
+                <li class="barra"></li>
+                <li><a href="#"><i class="material-icons">home</i>Home</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#"><i class="material-icons">assignment</i>Sign Up</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#"><i class="material-icons">restaurant</i>Search</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#"><i class="material-icons">place</i>Discover</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#"><i class="material-icons">person</i>Profile</a></li>
+                <li><div class="divider"></div></li>
+            </ul>
+        </div>
+    </nav>
 	<div class="container">
 		<div class="row">
 			<div class="input-field col s12">
-    			<select id="selpaises">
-      				<option value="" disabled selected>Select your city</option>
-      				<option value="83">Santiago De Chile</option>
-      				<option value="73">Rio De Janeiro</option>
-      				<option value="67">Sao Paulo</option>
-      				<option value="257">Roma</option>
-      				<option value="280">New York</option>
-      				<option value="97">Dublín</option>
-    			</select>
+    			<select name="selector" id="selector">
+					<option value="" disabled selected>Select your city</option>
+					<option value="83">Santiago De Chile</option>
+					<option value="73">Rio De Janeiro</option>
+					<option value="67">Sao Paulo</option>
+					<option value="257">Roma</option>
+					<option value="280">New York</option>
+					<option value="97">Dublín</option>
+				</select>
   			</div>
   		</div>
   	</div>
@@ -36,7 +56,7 @@
 			</div>
 			<div class="row">
 				<div class="col s12 tablacomparativa">
-					<table border="1">
+<!-- 					<table border="1">
 						<colgroup>
 							<col />
 							<col />
@@ -70,7 +90,7 @@
 							<td>$45</td>
 						</tr>
 					</tfoot> 
-					</table>
+					</table> -->
 				</div>
 			</div>
 		</div>
