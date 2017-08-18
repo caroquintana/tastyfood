@@ -1,0 +1,33 @@
+.index2{
+	background-color: whitesmoke;
+}
+
+nav{
+	background-color: #FD8631;
+	padding-left: 15px;
+	.barra{
+		height: 56px;
+        background: #FD8631;
+	}
+	.side-nav i{
+		color: #FD8631 !important;
+	}
+}
+
+.sign-up{
+	h4{
+		color: #FD8631;
+		font-weight: bold;
+	}
+	input{
+		background-color: #fff !important;
+	}
+	#btn-signUp{
+		width: 100%;
+		background-color: #FD8631;
+		color: #fff;
+	}
+	span{
+		color: red;
+	}
+}
