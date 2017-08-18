@@ -17,19 +17,20 @@
 }
 
 .nombre-email{
-	height: 250px;
+	height: 200px;
 	div{
 		width: 250px;
 		height: 30px;
 		position: relative;
-		top: 20px;
+		top: 50px;
 		border-radius: 10px;
 		margin-top: 20px;
-		margin-left: 80px;
+		margin-left: 70px;
 		background-color: white;
 	}
 	h5{
-		margin-top: 20px;
+		position: relative;
+		top: 60px;
 	}
 }
 #imagen{
